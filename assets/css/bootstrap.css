@@ -821,7 +821,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1080px;
   }
 }
 
@@ -2396,8 +2396,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-warning {
   color: #ffffff;
-  background-color: transparent;
-  border-color: #fff;
+  background: #00a0aa;
 }
 
 .btn-warning:hover,
@@ -2406,8 +2405,26 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning.active,
 .open .dropdown-toggle.btn-warning {
   color: #ffffff;
-  background-color: #50c1b9;
-  border-color: #50c1b9;
+  background-color: #d24727;
+
+}
+
+.btn-warning-orange {
+  color: #00a0aa;
+  background: transparent;
+  margin-right:10px; 
+  margin-top:10px;
+  border:1px solid #00a0aa
+}
+
+.btn-warning-orange:hover,
+.btn-warning-orange:focus,
+.btn-warning-orange:active,
+.btn-warning-orange.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #00a0aa;
+
 }
 
 .btn-warning:active,
@@ -4730,7 +4747,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: #f15c27;
+  background-color: #00a0aa;
   border-radius:2px;
 }
 

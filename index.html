@@ -299,50 +299,26 @@ drift.load('sd3banxsia5w')
     })(document,"script","hs-analytics",300000);
   </script>
 <!-- End of Async HubSpot Analytics Code -->
+<!--Start of HappyFox Live Chat Script-->
 <script>
-!function() {
-  var t;
-  return t = window.driftt = window.drift = window.driftt || [], t.init ? void 0 : t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-  t.methods = [ "identify", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-  t.factory = function(e) {
-    return function() {
-      var n;
-      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-    };
-  }, t.methods.forEach(function(e) {
-    t[e] = t.factory(e);
-  }), t.load = function(t) {
-    var e, n, o, r;
-    e = 3e5, r = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + r + "/" + t + ".js", 
-    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-  });
-}();
-drift.SNIPPET_VERSION = '0.2.0'
-drift.load('sd3banxsia5w')
+ window.HFCHAT_CONFIG = {
+     EMBED_TOKEN: "ba2a0d70-48fe-11e6-a768-159368d7b240",
+     ACCESS_TOKEN: "ab29e7c3523c4031bf145a678ed727e0",
+     HOST_URL: "https://happyfoxchat.com",
+     ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
+ };
+
+(function() {
+  var scriptTag = document.createElement('script');
+  scriptTag.type = 'text/javascript';
+  scriptTag.async = true;
+  scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js';
+
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(scriptTag, s);
+})();
 </script>
-<!-- Start of Leadin Embed -->
-  <script type="text/javascript" src="//js.leadin.com/js/v1/2285925.js" id="LeadinEmbed-2285925" crossorigin="use-credentials" async defer></script>
-<!-- End of Leadin Embed -->
-<!--Start of Zopim Live Chat Script-->
-<script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="//v2.zopim.com/?42wTK3denCjlcuR6RjGuMTjRJdousdac";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
-<!--End of Zopim Live Chat Script-->
-<!-- Start of Messages Async Embed -->
-<!-- Start of Messages Async Embed -->
-  <script type="text/javascript">
-    (function(d, s, id) {
-      if (d.getElementById(id)){ return; }
-      var js = d.createElement(s); js.src = 'https://api.usemessages.com/messages/v1/embed/396680.js'; js.id = id;
-      e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(js, e);
-      })(document, 'script', 'messages-396680')
-   </script>
-<!-- End of Messages Async Embed -->
-<!-- End of Messages Async Embed -->
+<!--End of HappyFox Live Chat Script-->
+
   </body>
 </html>
